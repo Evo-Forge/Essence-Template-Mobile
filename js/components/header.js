@@ -13,8 +13,8 @@ class MobileHeader extends React.Component {
 						<List type={'inline'}>
 							<ListItem>
 								<Text type={'a'} href={'#Home'} className={'e-text-uppercase e-text-white'}>Mobile</Text>
-							</ListItem>																			
-						</List>						
+							</ListItem>
+						</List>
 					</Block>
 				</Block>
 			</AppBar>

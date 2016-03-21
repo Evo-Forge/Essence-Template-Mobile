@@ -10,14 +10,14 @@ import {Block} from 'react-essence';
 // Components
 import MobileHeader from './components/header';
 import MobileFooter from './components/footer';
+import MobileSignup from './components/signup';
 
 
 class Mobile extends React.Component {
 	render() {
         return(
         	<Block>
-        		<MobileHeader />        		
-                <MobileFooter />
+                <MobileSignup />
         	</Block>
         );
     }
