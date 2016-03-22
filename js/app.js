@@ -10,6 +10,7 @@ import {Block} from 'react-essence';
 // Components
 import MobileHeader from './components/header';
 import MobileMenu from './components/menu';
+import MobileDetails from './components/details';
 import MobileFooter from './components/footer';
 
 
@@ -19,7 +20,7 @@ class Mobile extends React.Component {
         	<Block>
         		<MobileHeader />
 						<MobileMenu />
-            <MobileFooter />
+						<MobileDetails />
         	</Block>
         );
     }

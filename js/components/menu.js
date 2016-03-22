@@ -282,7 +282,7 @@ class MobileMenu extends React.Component {
               indicator={'e-background-blue-grey-300'}/>
             <Tab
               data={tabs2}
-              classes={'e-text-black'}
+              classes={'e-text-black select-view'}
               indicator={'e-background-blue-grey-300'}/>
     			</Block>
         );
