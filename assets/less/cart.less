@@ -1,0 +1,124 @@
+.add-border(@color) {
+  border: 1px solid @color;
+}
+.mobilecart {
+  padding-bottom: 40px;
+  button {
+    border-radius: 0;
+  }
+  .cart-item {
+    border-bottom: 1px solid #F3F3F3;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    &:first-child {
+      padding-top: 0;
+    }
+    .left-col {
+      display: flex;
+      align-items: center;
+      .img-container {
+        max-width: 80px;
+        min-width: 80px;
+        max-height: 80px;
+        min-height: 80px;
+        align-self: flex-start;
+        img {
+          display: block;
+        }
+      }
+    }
+    .right-col {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+      .text-container {
+        font-size: 3.2vw;
+        margin-left: 10px;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        .price {
+          min-width: 90px;
+          width: 90px;
+          @media only screen and (min-width: 568px) {
+            text-align: right;
+          }
+        }
+        @media only screen and (min-width: 568px) {
+          flex-grow: 1;
+          flex-direction: row;
+          justify-content: space-between;
+          align-self: stretch;
+        }
+      }
+      .label-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 10px;
+        line-height: 3em;
+        p {
+          &:first-child {
+            font-size: 3vw;
+          }
+          &:last-child {
+            font-size: 3.5vw;
+          }
+        }
+        @media only screen and (min-width: 568px) {
+          display: none;
+        }
+      }
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+        button {
+          width: 36px;
+          &:first-child {
+            border-bottom: 1px solid #13d3b6;
+          }
+          &.label-btn {
+            display: none;
+          }
+        }
+        @media only screen and (min-width: 568px) {
+          flex-direction: row-reverse;
+          margin-left: 10px;
+          button {
+            &:first-child {
+              border-bottom: none;
+              border-left: 1px solid #13d3b6;
+            }
+            &.label-btn {
+              display: block;
+              border-left: 1px solid #13d3b6;
+            }
+          }
+        }
+      }
+      @media only screen and (min-width: 568px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    &.edit-view {
+      flex-direction: row-reverse;
+    }
+  }
+  .del-item {
+    align-self: stretch;
+    margin: -5px -10px -5px 10px;
+  }
+  .order-btn {
+    width: 100%;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+  }
+}
