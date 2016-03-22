@@ -29,6 +29,13 @@
         justify-content: space-between;
       }
     }
+    button {
+      width: 100%;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      border-radius: 0;
+    }
   }
   .review-main {
     padding: 5px 0;
@@ -47,25 +54,23 @@
       }
     }
   }
-  button {
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    border-radius: 0;
-  }
   .main-active {
     display: flex;
     justify-content: space-between;
-    button {
-      margin: 0;
-      border-radius: 0;
-      min-width: 30px!important;
-      max-height: 40px!important;
-    }
     .quantity {
       display: flex;
       flex-direction: row;
+      .flat {
+        min-width: 40px;
+      }
+      button {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        width: 40px!important;
+        height: 40px!important;
+      }
       .quantity-label {
         width: 40px;
         height: 40px;
