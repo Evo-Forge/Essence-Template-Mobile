@@ -13,6 +13,7 @@ import MobileMenu from './components/menu';
 import MobileDetails from './components/details';
 import MobileCart from './Components/cart'
 import MobileFooter from './components/footer';
+import MobileSignup from './components/signup';
 
 
 class Mobile extends React.Component {
@@ -24,6 +25,7 @@ class Mobile extends React.Component {
 						<MobileDetails />
 						<MobileCart />
 				<MobileCart />
+                <MobileSignup />
         	</Block>
         );
     }
