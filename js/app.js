@@ -11,6 +11,7 @@ import {Block} from 'react-essence';
 import MobileHeader from './components/header';
 import MobileMenu from './components/menu';
 import MobileDetails from './components/details';
+import MobileCart from './Components/cart'
 import MobileFooter from './components/footer';
 
 
@@ -21,6 +22,7 @@ class Mobile extends React.Component {
         		<MobileHeader />
 						<MobileMenu />
 						<MobileDetails />
+						<MobileCart />
         	</Block>
         );
     }
