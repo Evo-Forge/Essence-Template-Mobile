@@ -20,6 +20,7 @@ class Mobile extends React.Component {
 	render() {
         return(
         	<Block>
+						<MobileHeader />
 						<MobileMenu />
 						<MobileDetails />
 						<MobileCart />

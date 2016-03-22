@@ -135,21 +135,6 @@ class MobileHeader extends React.Component {
         </Block>
       );
   }
-    render() {
-        return (
-        	<AppBar classes={'e-background-indigo-800'}>
-        		<Block className={'e-container '}>
-        			<Block className={'brick-12 e-no-margin'}>
-						<List type={'inline'}>
-							<ListItem>
-								<Text type={'a'} href={'#Home'} className={'e-text-uppercase e-text-white'}>Mobile</Text>
-							</ListItem>
-						</List>
-					</Block>
-				</Block>
-			</AppBar>
-        );
-    }
 }
 
 module.exports = MobileHeader;
