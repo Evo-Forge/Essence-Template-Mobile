@@ -23,6 +23,7 @@ class Mobile extends React.Component {
 						<MobileMenu />
 						<MobileDetails />
 						<MobileCart />
+				<MobileCart />
         	</Block>
         );
     }
