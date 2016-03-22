@@ -68,8 +68,6 @@ class MobileSignup extends React.Component {
     render() {
         return (
           <Block classes={'SignUp-container'}>
-          <Image width={'40px'} height={'40px'} style={{verticalAlign: 'middle'}} src={'http://getessence.io/assets/img/essence_icon.png'} />
-
           <Navigation>
              <Block classes={'e-navigation-wrapper'} id={'navigationMenu'}>
               <Block type={'header'} className={'e-nav-header'} style={{lineHeight: '52px'}}>
@@ -106,7 +104,7 @@ class MobileSignup extends React.Component {
              </Block>
             </Navigation>
             <Block className={'header-signup'}>
-
+              <Image src={'../assets/img/SignUp-header-1.jpg'} />
             </Block>
             <Tab
               data={tabs}
