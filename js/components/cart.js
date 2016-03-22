@@ -19,7 +19,7 @@ class MobileCart extends React.Component {
                   <Text type={'p'} classes={'e-text-left e-no-margin'}>
                     Grilled Turkey Fillet
                   </Text>
-                  <Text type={'p'} classes={'e-text-left e-text-grey-500'}>
+                  <Text type={'p'} classes={'e-text-left e-text-grey-500 price'}>
                     <Icon name={"editor-attach-money"} className={'no-min-size'} />
                     9.50
                   </Text>
@@ -48,7 +48,7 @@ class MobileCart extends React.Component {
                   <Text type={'p'} classes={'e-text-left e-no-margin'}>
                     Chicken Fillet with Coriander Cumin Crust and Sweetcorn
                   </Text>
-                  <Text type={'p'} classes={'e-text-left e-text-grey-500'}>
+                  <Text type={'p'} classes={'e-text-left e-text-grey-500 price'}>
                     <Icon name={"editor-attach-money"} className={'no-min-size'} />
                     9.50
                   </Text>
@@ -77,7 +77,7 @@ class MobileCart extends React.Component {
                   <Text type={'p'} classes={'e-text-left e-no-margin'}>
                     Chicken Fillet with Coriander Cumin Crust and Sweetcorn
                   </Text>
-                  <Text type={'p'} classes={'e-text-left e-text-grey-500'}>
+                  <Text type={'p'} classes={'e-text-left e-text-grey-500 price'}>
                     <Icon name={"editor-attach-money"} className={'no-min-size'} />
                     9.50
                   </Text>
