@@ -18,7 +18,7 @@ class Mobile extends React.Component {
         return(
         	<Block>
         		<MobileHeader />
-						<MobileCart />
+				<MobileCart />
         	</Block>
         );
     }
