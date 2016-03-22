@@ -3,6 +3,9 @@
   height: auto;
   padding: 20px 0 0!important;
   margin-top: -45px!important;
+  @media screen and (max-width: 320px) {
+    height:480px!important;
+  }
 }
 .relative{
   position: relative;
@@ -23,8 +26,16 @@
   background-color: #FAFAFA!important;
 }
 .filter-ul{
+  li {
+    @media screen and (max-width: 320px) {
+      height:40px!important;
+    }
+  }
   .content{
     color: #0C0C0C!important;
     font-weight: 600;
+    @media screen and (max-width: 320px) {
+      line-height:40px!important;
+    }
   }
 }
