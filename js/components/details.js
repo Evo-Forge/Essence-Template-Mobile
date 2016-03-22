@@ -74,21 +74,25 @@ var tabs = {
         </Block>
         <Block classes={'e-background-white content-padding'}>
           <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-300'}>Nutritional facts</Text>
-          <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-500'}>
-            About 1/2 kg boneless and skinless turkey breast fillets
-          </Text>
+          <Block classes={'nutrition-content'}>
+            <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-500'}>Calories</Text>
+            <Text type={'span'} classes={'e-text-right e-body1 e-text-grey-500'}>120</Text>
+          </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
-          <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-500'}>
-            1 small red onion finely chopped
-          </Text>
+          <Block classes={'nutrition-content'}>
+            <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-500'}>Fats</Text>
+            <Text type={'span'} classes={'e-text-right e-body1 e-text-grey-500'}>15%</Text>
+          </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
-          <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-500'}>
-            1 clove garlic smashed and chopped
-          </Text>
+          <Block classes={'nutrition-content'}>
+            <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-500'}>Proteins</Text>
+            <Text type={'span'} classes={'e-text-right e-body1 e-text-grey-500'}>17%</Text>
+          </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
-          <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-500'}>
-            1/2 tsp ground cinnamon
-          </Text>
+          <Block classes={'nutrition-content'}>
+            <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-500'}>Carbohydrates</Text>
+            <Text type={'span'} classes={'e-text-right e-body1 e-text-grey-500'}>43%</Text>
+          </Block>
         </Block>
         <Block classes={'e-background-white content-padding'}>
           <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-300'}>Delivery Information</Text>
