@@ -29,6 +29,24 @@
           display: block;
         }
       }
+      .del-item {
+        align-self: stretch;
+        display: none;
+        margin: -5px -10px -5px 10px;
+        font-size: 3vw;
+        @media only screen and (min-width: 568px) {
+          width: 96px;
+        }
+        @media only screen and (min-width: 640px) {
+          width: 104px;
+        }
+        @media only screen and (min-width: 768px) {
+          width: 116px;
+        }
+        @media only screen and (min-width: 1024px) {
+          width: 148px;
+        }
+      }
     }
     .right-col {
       display: flex;
@@ -43,10 +61,15 @@
         flex-direction: column;
         flex-grow: 1;
         .price {
-          min-width: 90px;
-          width: 90px;
+          min-width: 80px;
+          width: 80px;
           @media only screen and (min-width: 568px) {
-            text-align: right;
+            text-align: right!important;
+          }
+          @media only screen and (min-width: 1024px) {
+            text-align: right!important;
+            width: 100px;
+            min-width: 100px;
           }
         }
         @media only screen and (min-width: 568px) {
@@ -108,13 +131,20 @@
       }
     }
     &.edit-view {
+      /* add this class to an .cart-item to get the edit/delete view*/
       flex-direction: row-reverse;
+      .text-container, .btn-container {
+        margin-left: 0;
+      }
+      .img-container {
+        display: none;
+      }
+      .del-item {
+        display: block;
+      }
     }
   }
-  .del-item {
-    align-self: stretch;
-    margin: -5px -10px -5px 10px;
-  }
+
   .order-btn {
     width: 100%;
     border-radius: 0;
