@@ -9,7 +9,8 @@ var tabs = {
    { 'context': (<Text>SIGN IN</Text>) }
   ],
   'rows': [
-   ( <Block classes={'relative e-no-margin div-height e-row align-center'}>
+   ( <Block>
+     <Block classes={'e-row relative e-no-margin div-height  align-center'}>
       <Block classes={'brick brick-12'}>
         <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-400'}>USERNAME</Text>
         <Input type={'text'} name={'label'} label={'Input with label'} />
@@ -23,12 +24,14 @@ var tabs = {
           Dont have an Account<Text type={'a'} className={'e-text-grey-800'}> Sign Up</Text>
         </Text>
       </Block>
-      <Block className={'e-no-margin button-div fixed-bottom'}>
-        <Btn label={'Sign In'} ripple={true} className={'flat e-background-teal-A700 adjust-button e-no-margin e-text-white'} />
-      </Block>
+    </Block>
+    <Block className={'e-no-margin button-div fixed-bottom'}>
+      <Btn label={'Sign In'} ripple={true} className={'flat e-background-teal-A700 adjust-button e-no-margin e-text-white'} />
+    </Block>
     </Block>
 ),
-(<Block classes={'relative e-no-margin div-height e-row align-top'}>
+(<Block>
+  <Block classes={'relative e-no-margin div-height e-row align-top'}>
    <Block classes={'brick brick-12 adjust-height-input'}>
      <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-400'}>FULL NAME</Text>
      <Input type={'text'} name={'label'} label={'Input with label'} />
@@ -45,7 +48,7 @@ var tabs = {
      <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-400'}>TELEPHONE NUMBER</Text>
      <Input type={'text'} name={'label'} label={'Input with label'} />
    </Block>
-   <Block classes={'brick brick-7 absolute-text2'}>
+   <Block classes={'brick brick-7 absolute-text'}>
      <Text className={'e-text-grey-400 brick brick-12'}>
        Be creating your account, you agree with our Terms and Conditions.
      </Text>
@@ -53,6 +56,7 @@ var tabs = {
    <Block className={'e-no-margin button-div fixed-bottom'}>
      <Btn label={'Create Account'} ripple={true} className={'flat e-background-teal-A700 adjust-button e-no-margin e-text-white'} />
    </Block>
+ </Block>
  </Block>
  )
  ]
@@ -63,9 +67,9 @@ class MobileSignup extends React.Component {
 
     render() {
         return (
-          <Block>
+          <Block classes={'SignUp-container'}>
             <Block className={'header-signup'}>
-              <Image src={'https://www.brightsettings.com/BrightIdeas/wp-content/uploads/2013/01/DarkPlateOfFood.jpg'} />
+              <Image src={'../assets/img/SignUp-header-1.jpg'} />
             </Block>
             <Tab
               data={tabs}
