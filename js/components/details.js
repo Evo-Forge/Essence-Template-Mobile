@@ -19,19 +19,19 @@ var tabs = {
            <Text type={'p'} classes={'e-text-left e-headline e-text-black'}>$9.50</Text>
           </Block>
           <Block classes={'quantity'}>
-            <Btn icon={'content-remove'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
-            <Text type={'p'} classes={'e-title e-background-blue-grey-400 e-text-white quantity-label e-v-center e-h-center'}>2</Text>
-            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+            <Btn icon={'content-remove'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
+            <Text type={'p'} classes={'e-title e-background-teal-400 e-text-white quantity-label e-v-center e-h-center'}>2</Text>
+            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
           </Block>
         </Block>
         <Block classes={'e-background-white content-padding'}>
-          <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-300'}>Description</Text>
+          <Text type={'p'} classes={'e-text-left e-subhead e-text-teal-A700'}>Description</Text>
           <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-500'}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           </Text>
         </Block>
         <Block classes={'e-background-white content-padding'}>
-          <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-300'}>Ingredients</Text>
+          <Text type={'p'} classes={'e-text-left e-subhead e-text-teal-A700'}>Ingredients</Text>
           <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-500'}>
             About 1/2 kg boneless and skinless turkey breast fillets
           </Text>
@@ -73,7 +73,7 @@ var tabs = {
           </Text>
         </Block>
         <Block classes={'e-background-white content-padding'}>
-          <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-300'}>Nutritional facts</Text>
+          <Text type={'p'} classes={'e-text-left e-subhead e-text-teal-A700'}>Nutritional facts</Text>
           <Block classes={'nutrition-content'}>
             <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-500'}>Calories</Text>
             <Text type={'span'} classes={'e-text-right e-body1 e-text-grey-500'}>120</Text>
@@ -93,15 +93,16 @@ var tabs = {
             <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-500'}>Carbohydrates</Text>
             <Text type={'span'} classes={'e-text-right e-body1 e-text-grey-500'}>43%</Text>
           </Block>
+          <Divider classes={'thinnest e-background-grey-200'} />
         </Block>
         <Block classes={'e-background-white content-padding'}>
-          <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-300'}>Delivery Information</Text>
+          <Text type={'p'} classes={'e-text-left e-subhead e-text-teal-A700'}>Delivery Information</Text>
           <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-500'}>
             06:00 PM until 10:00 PM
           </Text>
         </Block>
        </Block>
-       <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-grey-300'} />
+       <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-teal-A700'} />
    </Block>),
    (<Block classes={'e-background-grey-100'}>
       <Block classes={'review-main'}>
@@ -205,7 +206,7 @@ class MobileDetails extends React.Component {
             <Tab
               data={tabs}
               classes={'e-text-black'}
-              indicator={'e-background-blue-grey-300'}/>
+              indicator={'e-background-teal-A700'}/>
 			    </Block>
         );
     }

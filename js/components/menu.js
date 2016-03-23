@@ -21,7 +21,7 @@ var tabs = {
            <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$9.50</Text>
           </Block>
           <Block>
-            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
           </Block>
         </Block>
         <Divider classes={'thinnest e-background-grey-200'} />
@@ -36,7 +36,7 @@ var tabs = {
             <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$7.50</Text>
            </Block>
            <Block>
-             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
            </Block>
          </Block>
          <Divider classes={'thinnest e-background-grey-200'} />
@@ -51,7 +51,7 @@ var tabs = {
              <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$8.50</Text>
             </Block>
             <Block>
-              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
             </Block>
           </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
@@ -68,7 +68,7 @@ var tabs = {
            <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$9.50</Text>
           </Block>
           <Block>
-            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
           </Block>
         </Block>
         <Divider classes={'thinnest e-background-grey-200'} />
@@ -83,7 +83,7 @@ var tabs = {
             <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$7.50</Text>
            </Block>
            <Block>
-             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
            </Block>
          </Block>
          <Divider classes={'thinnest e-background-grey-200'} />
@@ -98,7 +98,7 @@ var tabs = {
              <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$8.50</Text>
             </Block>
             <Block>
-              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
             </Block>
           </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
@@ -115,7 +115,7 @@ var tabs = {
            <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$9.50</Text>
           </Block>
           <Block>
-            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
           </Block>
         </Block>
         <Divider classes={'thinnest e-background-grey-200'} />
@@ -130,7 +130,7 @@ var tabs = {
             <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$7.50</Text>
            </Block>
            <Block>
-             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
            </Block>
          </Block>
          <Divider classes={'thinnest e-background-grey-200'} />
@@ -145,7 +145,7 @@ var tabs = {
              <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$8.50</Text>
             </Block>
             <Block>
-              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
             </Block>
           </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
@@ -170,7 +170,7 @@ var tabs2 = {
            <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$9.50</Text>
           </Block>
           <Block>
-            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
           </Block>
         </Block>
         <Divider classes={'thinnest e-background-grey-200'} />
@@ -185,7 +185,7 @@ var tabs2 = {
             <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$7.50</Text>
            </Block>
            <Block>
-             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
            </Block>
          </Block>
          <Divider classes={'thinnest e-background-grey-200'} />
@@ -200,7 +200,7 @@ var tabs2 = {
              <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$8.50</Text>
             </Block>
             <Block>
-              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
             </Block>
           </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
@@ -217,7 +217,7 @@ var tabs2 = {
            <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$9.50</Text>
           </Block>
           <Block>
-            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+            <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
           </Block>
         </Block>
         <Divider classes={'thinnest e-background-grey-200'} />
@@ -232,7 +232,7 @@ var tabs2 = {
             <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$7.50</Text>
            </Block>
            <Block>
-             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+             <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
            </Block>
          </Block>
          <Divider classes={'thinnest e-background-grey-200'} />
@@ -247,7 +247,7 @@ var tabs2 = {
              <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$8.50</Text>
             </Block>
             <Block>
-              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
             </Block>
           </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
@@ -262,7 +262,7 @@ var tabs2 = {
              <Text type={'p'} classes={'e-text-left e-title e-text-grey-500'}>$8.50</Text>
             </Block>
             <Block>
-              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-blue-grey-300 e-text-white'} />
+              <Btn icon={'content-add'} ripple={true} type={'success'} classes={'flat e-background-teal-A700 e-text-white'} />
             </Block>
           </Block>
           <Divider classes={'thinnest e-background-grey-200'} />
@@ -279,11 +279,11 @@ class MobileMenu extends React.Component {
             <Tab
               data={tabs}
               classes={'e-text-black'}
-              indicator={'e-background-blue-grey-300'}/>
+              indicator={'e-background-teal-A700'}/>
             <Tab
               data={tabs2}
               classes={'e-text-black select-view'}
-              indicator={'e-background-blue-grey-300'}/>
+              indicator={'e-background-teal-A700'}/>
     			</Block>
         );
     }
