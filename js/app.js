@@ -12,6 +12,9 @@ import MobileHeader from './components/header';
 import MobileMenu from './components/menu';
 import MobileDetails from './components/details';
 import MobileCart from './Components/cart'
+import MobileCart from './components/cart';
+import MobileConfirmation from './components/confirmation';
+>>>>>>> cb23fffe2822c6fc98d433147dd22c30c2aeb4da
 import MobileFooter from './components/footer';
 import MobileSignup from './components/signup';
 
@@ -26,6 +29,8 @@ class Mobile extends React.Component {
 						<MobileCart />
 						<MobileCart />
             <MobileSignup />
+        		<MobileHeader />
+						<MobileConfirmation />
         	</Block>
         );
     }
