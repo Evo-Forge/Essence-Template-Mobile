@@ -67,10 +67,7 @@ class MobilePayment extends React.Component {
 
     render() {
         return (
-          <Block classes={'SignUp-container'}>
-            <Block className={'header-signup'}>
-            
-            </Block>
+          <Block>
             <Tab
               data={tabs}
               classes={'background-adjust e-text-grey-50'}
