@@ -181,12 +181,14 @@ class MobileHeader extends React.Component {
 
   showDialog() {
     this.setState({
-     dialog: true
+     dialog: true,
+     navigation: false
     });
   }
 
   showNavigation() {
     this.setState({
+    dialog: false,
      navigation: true
     });
   }
