@@ -105,6 +105,18 @@ var tabs = {
    </Block>),
    (<Block classes={'e-background-grey-100'}>
       <Block classes={'review-main'}>
+        <Block classes={'review-card'}>
+          <Block classes={'rating'}>
+            <Block classes={'rating-stars e-headline'}>
+              <Text type={'span'} classes={'e-text-center e-title e-text-orange-400'}>&#9733;</Text>
+              <Text type={'span'} classes={'e-text-center e-title e-text-orange-400'}>&#9733;</Text>
+              <Text type={'span'} classes={'e-text-center e-title e-text-orange-400'}>&#9733;</Text>
+              <Text type={'span'} classes={'e-text-center e-title e-text-orange-400'}>&#9733;</Text>
+              <Text type={'span'} classes={'e-text-center e-title e-text-orange-400'}>&#9734;</Text>
+              <Text type={'span'} classes={'e-text-left e-caption e-text-grey-500'}>&nbsp;&nbsp;&nbsp;4</Text>
+            </Block>
+          </Block>
+        </Block>
         <Block classes={'review-card e-background-white'}>
           <Block classes={'rating'}>
             <Text type={'span'} classes={'e-text-center e-caption e-text-grey-500'}>Samantha Dorri</Text>
