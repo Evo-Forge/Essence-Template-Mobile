@@ -9,7 +9,8 @@ import {Block} from 'react-essence';
 
 // Components
 import MobileHeader from './components/header';
-import MobileCart from './Components/cart'
+import MobileCart from './components/cart';
+import MobileConfirmation from './components/confirmation';
 import MobileFooter from './components/footer';
 
 
@@ -18,7 +19,7 @@ class Mobile extends React.Component {
         return(
         	<Block>
         		<MobileHeader />
-				<MobileCart />
+						<MobileConfirmation />
         	</Block>
         );
     }
