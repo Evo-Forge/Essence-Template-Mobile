@@ -122,40 +122,49 @@ class MobileNavigation extends React.Component {
 
   render() {
     return (
-      <Navigation visible={this.state.open}>
-         <Block classes={'e-navigation-wrapper'} id={'navigationMenu'}>
-          <Block type={'header'} className={'e-nav-header'} style={{lineHeight: '52px'}}>
-           <Text type={'a'} href={'#home'}>
-            <Image width={'40px'} height={'40px'} style={{verticalAlign: 'middle'}} src={'http://getessence.io/assets/img/essence_icon.png'} />
-           </Text>
-           <Text type={'h2'} classes={'e-text-indigo-400 e-right'} style={{width: '74%', lineHeight: '45px'}}>
-            <Text>essence</Text>
-           </Text>
-          </Block>
-          <List type={'navigation'} classes={'e-background-white'}>
-           <ListItem key={'about'}>
-            <Text type={'a'} href={'#about'}>
-             <Block classes={'content e-left'}>
-              <Text type={'small'}>About</Text>
-             </Block>
-            </Text>
-           </ListItem>
-           <ListItem key={'get-started'}>
-            <Text type={'a'} href={'#get-started'}>
-             <Block classes={'content e-left'}>
-              <Text type={'small'}>Get Started</Text>
-             </Block>
-            </Text>
-           </ListItem>
-           <ListItem key={'contact'}>
-            <Text type={'a'} href={'#contact'}>
-             <Block classes={'content e-left'}>
-              <Text type={'small'}>Contact</Text>
-             </Block>
-            </Text>
-           </ListItem>
-          </List>
-         </Block>
+      <Navigation className={'e-background-teal-A700'}visible={this.state.open}>
+      <Block className={'padding-left-20 e-margin-top-25 e-margin-bottom-25'}>
+        <Text className={'e-text-white e-title'}>
+          Caterit
+        </Text>
+      </Block>
+			<List type={'navigation'} className={'nav-ul e-body1'}>
+				<ListItem>
+				 <Text type={'a'}>
+					<Block classes={'content e-left e-text-white'}>MY ORDERS</Block>
+				 </Text>
+				</ListItem>
+				<Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
+			 <ListItem>
+				<Text type={'a'}>
+				 <Block classes={'content e-left e-text-white'}>ORDER HISTORY</Block>
+				</Text>
+			 </ListItem>
+			 <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
+			 <ListItem>
+				<Text type={'a'}>
+				 <Block classes={'content e-left e-text-white'}>PAYMENT DETAILS</Block>
+				</Text>
+			 </ListItem>
+			 <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
+			 <ListItem>
+				<Text type={'a'}>
+				 <Block classes={'content e-left e-text-white'}>DELIVERY ADDRESSES</Block>
+				</Text>
+			 </ListItem>
+			 <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
+			 <ListItem>
+				<Text type={'a'}>
+				 <Block classes={'content e-left e-text-white'}>ABOUT</Block>
+				</Text>
+			 </ListItem>
+			 <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
+			 <ListItem>
+				<Text type={'a'}>
+				 <Block classes={'content e-left e-text-white'}>LOG OUT</Block>
+				</Text>
+			 </ListItem>
+		 </List>
        </Navigation>
     );
   }
