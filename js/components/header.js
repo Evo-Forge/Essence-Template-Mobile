@@ -215,7 +215,7 @@ class MobileHeader extends React.Component {
                </ListItem>
              </List>
           </AppBar>
-          <MobileDialog visible={this.state.dialog} onClose={this.hideDialog.bind(this)} />
+          <MobileDialog visible={this.state.dialog}/>
           <MobileNavigation visible={this.state.navigation} />
         </Block>
 
