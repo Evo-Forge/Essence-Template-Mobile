@@ -3,21 +3,40 @@ import ClassNames from 'classnames';
 
 import { Block, Btn, Icon, Image, Text, Utils} from 'react-essence';
 
+var cartData = [
+  {id: 1, name: "Razvan waz here 1", price: 5.00, pieceNumber: 1},
+  {id: 2, name: "Razvan waz here 2", price: 4.00, pieceNumber: 2},
+  {id: 3, name: "Razvan waz here 3", price: 1.00, pieceNumber: 4}
+];
+
 class MobileCartItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pieceNumber : this.props.pieceNumber
+      pieceNumber : this.props.pieceNumber,
+      totalItemsPrice : this.props.pieceNumber * this.props.price
     };
   }
 
   addItem() {
-    this.setState({pieceNumber : this.state.pieceNumber + 1})
+    this.setState(
+      {
+      pieceNumber : this.state.pieceNumber + 1,
+      totalItemsPrice : this.state.totalItemsPrice + this.props.price
+      }
+  );
+    this.props.addSubtotal(this.props.price);
   }
 
   removeItem() {
-    /* TODO test: we can't have negative pieceNumber  */
-    this.setState({pieceNumber : this.state.pieceNumber - 1})
+    /* TODO test: we can't have negative pieceNumber & delete item from cart list if pieceNumber is 0 ?!  */
+    this.setState(
+      {
+        pieceNumber : this.state.pieceNumber - 1,
+        totalItemsPrice : this.state.totalItemsPrice - this.props.price
+      }
+    );
+    this.props.addSubtotal(-this.props.price);
   }
 
   render() {
@@ -32,11 +51,11 @@ class MobileCartItem extends React.Component {
         <Block className={'right-col'}>
           <Block className={'text-container'}>
             <Text type={'p'} classes={'e-text-left e-no-margin'}>
-              Grilled Turkey Fillet
+              {this.props.name}
             </Text>
             <Text type={'p'} classes={'e-text-left e-text-grey-500 price'}>
               <Icon name={"editor-attach-money"} className={'no-min-size'} />
-              9.50
+              <Text>{this.props.price}</Text>
             </Text>
           </Block>
 
@@ -61,29 +80,51 @@ class MobileCartItemList extends React.Component {
   }
 
   render() {
+    var addSubtotal = this.props.addSubtotal;
+    var cartItems = this.props.data.map(function(item) {
+      return (
+        <MobileCartItem addSubtotal={addSubtotal} key={item.id} name={item.name} price={item.price} pieceNumber={item.pieceNumber} />
+      );
+    }
+  );
     return (
       <Block>
-        <MobileCartItem pieceNumber={1} />
-        <MobileCartItem pieceNumber={1} />
-        <MobileCartItem pieceNumber={1} />
-        <MobileCartItem pieceNumber={1} />
+        {cartItems}
       </Block>
     );
   }
 }
 
-class MobileCart extends React.Component {
 
+
+class MobileCart extends React.Component {
+  constructor(props) {
+    super(props);
+    var subtotal = 0;
+    cartData.map(function(item) {
+      return (item.price * item.pieceNumber);
+    }).forEach(function(el) {
+      subtotal += el;
+    });
+
+    console.log('subtotal', subtotal);
+    this.state = {
+      subtotal: subtotal
+    };
+  }
+
+  addSubtotal(price) {
+    this.setState({subtotal: this.state.subtotal + price});
+  }
     render() {
         return (
           <Block className={'e-container e-padding-top-15 mobilecart'}>
-            <MobileCartItemList />
-
+            <MobileCartItemList data={cartData} addSubtotal={this.addSubtotal.bind(this)} />
             <Block className={'cart-item e-v-center e-padding-top-15'}>
               <Text type={'p'} classes={'e-button e-text-grey-500'}>subtotal</Text>
               <Text type={'p'} classes={' e-text-uppercase e-display-1'}>
                 <Icon name={"editor-attach-money"} className={'no-min-size'} />
-                22.00
+                {this.state.subtotal}
               </Text>
             </Block>
 
