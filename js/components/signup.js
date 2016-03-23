@@ -68,41 +68,6 @@ class MobileSignup extends React.Component {
     render() {
         return (
           <Block classes={'SignUp-container'}>
-          <Navigation>
-             <Block classes={'e-navigation-wrapper'} id={'navigationMenu'}>
-              <Block type={'header'} className={'e-nav-header'} style={{lineHeight: '52px'}}>
-               <Text type={'a'} href={'#home'}>
-                <Image width={'40px'} height={'40px'} style={{verticalAlign: 'middle'}} src={'http://getessence.io/assets/img/essence_icon.png'} />
-               </Text>
-               <Text type={'h2'} classes={'e-text-indigo-400 e-right'} style={{width: '74%', lineHeight: '45px'}}>
-                <Text>essence</Text>
-               </Text>
-              </Block>
-              <List type={'navigation'} classes={'e-background-white'}>
-               <ListItem key={'about'}>
-                <Text type={'a'} href={'#about'}>
-                 <Block classes={'content e-left'}>
-                  <Text type={'small'}>About</Text>
-                 </Block>
-                </Text>
-               </ListItem>
-               <ListItem key={'get-started'}>
-                <Text type={'a'} href={'#get-started'}>
-                 <Block classes={'content e-left'}>
-                  <Text type={'small'}>Get Started</Text>
-                 </Block>
-                </Text>
-               </ListItem>
-               <ListItem key={'contact'}>
-                <Text type={'a'} href={'#contact'}>
-                 <Block classes={'content e-left'}>
-                  <Text type={'small'}>Contact</Text>
-                 </Block>
-                </Text>
-               </ListItem>
-              </List>
-             </Block>
-            </Navigation>
             <Block className={'header-signup'}>
               <Image src={'../assets/img/SignUp-header-1.jpg'} />
             </Block>
