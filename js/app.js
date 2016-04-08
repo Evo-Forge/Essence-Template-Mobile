@@ -13,6 +13,7 @@ import MobileCart from './components/cart';
 import MobileConfirmation from './components/confirmation';
 import MobileCheckout from './components/checkout';
 import MobileHistory from './components/history';
+import MobilePayment from './components/payment';
 import MobileFooter from './components/footer';
 
 
@@ -22,6 +23,7 @@ class Mobile extends React.Component {
         	<Block>
         		<MobileHeader />
 						<MobileHistory />
+						<MobilePayment />
         	</Block>
         );
     }
