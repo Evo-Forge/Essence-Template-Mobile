@@ -15,6 +15,7 @@ import MobileCheckout from './components/checkout';
 import MobileHistory from './components/history';
 import MobilePayment from './components/payment';
 import MobileFooter from './components/footer';
+import MobileSignup from './components/signup';
 
 
 class Mobile extends React.Component {
@@ -24,6 +25,7 @@ class Mobile extends React.Component {
         		<MobileHeader />
 						<MobileHistory />
 						<MobilePayment />
+            <MobileSignup />
         	</Block>
         );
     }
