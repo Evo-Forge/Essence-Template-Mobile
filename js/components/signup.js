@@ -1,5 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router';
 
 import { Btn, AppBar, Block, Image,  Input, Navigation, Tab, Text, Utils, Menu, List, ListItem} from 'react-essence';
 
@@ -26,7 +27,9 @@ var tabs = {
       </Block>
     </Block>
     <Block className={'e-no-margin button-div fixed-bottom'}>
-      <Btn label={'Sign In'} ripple={true} className={'flat e-background-teal-A700 adjust-button e-no-margin e-text-white'} />
+      <Link to={'cart'} >
+        <Btn label={'Sign In'} ripple={true} className={'flat e-background-teal-A700 adjust-button e-no-margin e-text-white'} />
+      </Link>
     </Block>
     </Block>
 ),

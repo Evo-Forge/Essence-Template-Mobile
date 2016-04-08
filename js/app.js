@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 /* Use of components */
 
@@ -37,9 +38,15 @@ class Mobile extends React.Component {
 }
 
 ReactDOM.render(
-	<Block>
-		<Mobile />
-	</Block>
-	,
-	document.querySelector('.app')
+ <Router history={browserHistory}>
+    <Route path="/" component={MobileSignup} />
+    <Route path="cart" component={MobileCart} />
+    <Route path="menu" component={MobileMenu} />
+    <Route path="details" component={MobileDetails} />
+    <Route path="confirmation" component={MobileConfirmation} />
+    <Route path="checkout" component={MobileCheckout} />
+    <Route path="history" component={MobileHistory} />
+    <Route path="payment" component={MobilePayment} />
+  </Router>,
+ document.querySelector('.app')
 );
