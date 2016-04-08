@@ -4,9 +4,9 @@ import ClassNames from 'classnames';
 import { Block, Btn, Icon, Image, Text, Utils} from 'react-essence';
 
 var cartData = [
-  {id: 1, name: "Razvan waz here 1", price: 5.00, pieceNumber: 1},
-  {id: 2, name: "Razvan waz here 2", price: 4.00, pieceNumber: 2},
-  {id: 3, name: "Razvan waz here 3", price: 1.00, pieceNumber: 4}
+  {id: 1, name: "Grilled Turkey Fillet", price: 9.50, pieceNumber: 2},
+  {id: 2, name: "Chinese Mix Vegetables with Shrimps", price: 12.50, pieceNumber: 1},
+  {id: 3, name: "Chicken Fillet with Coriander Cumin Crust and Sweetcorn", price: 8.80, pieceNumber: 1}
 ];
 
 class MobileCartItem extends React.Component {
