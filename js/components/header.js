@@ -49,50 +49,43 @@ class MobileDialog extends React.Component {
          <List type={'navigation'} className={'filter-ul'}>
            <ListItem>
             <Text type={'a'}>
-             <Switch type={'checkbox'} classes={'e-left'} name='radioButton'/>
-             <Block classes={'content e-left'}>Mains</Block>
+             <Switch type={'checkbox'} classes={'content e-left'} name={'switch-uncheckbox'} text={'Mains'}/>
             </Text>
            </ListItem>
            <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
           <ListItem>
            <Text type={'a'}>
-            <Switch type={'checkbox'} classes={'e-left'} name='radioButton'/>
-            <Block classes={'content e-left'}>Sides</Block>
+           <Switch type={'checkbox'} classes={'content e-left'} name={'switch-uncheckbox'} text={'Sides'}/>
            </Text>
           </ListItem>
           <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
           <ListItem>
            <Text type={'a'}>
-            <Switch type={'checkbox'} classes={'e-left'} name='radioButton'/>
-            <Block classes={'content e-left'}>Dairy-Free</Block>
+           <Switch type={'checkbox'} classes={'content e-left'} name={'switch-uncheckbox'} text={'Dairy-free'}/>
            </Text>
           </ListItem>
           <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
           <ListItem>
            <Text type={'a'}>
-            <Switch type={'checkbox'} classes={'e-left'} name='radioButton'/>
-            <Block classes={'content e-left'}>Gluten-Free</Block>
+           <Switch type={'checkbox'} classes={'content e-left'} name={'switch-uncheckbox'} text={'Gluten-free'}/>
            </Text>
           </ListItem>
           <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
           <ListItem>
            <Text type={'a'}>
-            <Switch type={'checkbox'} classes={'e-left'} name='radioButton'/>
-            <Block classes={'content e-left'}>Vegetarian</Block>
+           <Switch type={'checkbox'} classes={'content e-left'} name={'switch-uncheckbox'} text={'Vegetarian'}/>
            </Text>
           </ListItem>
           <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
           <ListItem>
            <Text type={'a'}>
-            <Switch type={'checkbox'} classes={'e-left'} name='radioButton'/>
-            <Block classes={'content e-left'}>Vegan</Block>
+           <Switch type={'checkbox'} classes={'content e-left'} name={'switch-uncheckbox'} text={'Vegan'}/>
            </Text>
           </ListItem>
           <Divider classes={'thin e-background-grey-200 e-text-center adjust-divider'} />
           <ListItem>
            <Text type={'a'}>
-            <Switch type={'checkbox'} classes={'e-left'} name='radioButton'/>
-            <Block classes={'content e-left'}>Spicy</Block>
+           <Switch type={'checkbox'} classes={'content e-left'} name={'switch-uncheckbox'} text={'Spicy'}/>
            </Text>
           </ListItem>
         </List>
@@ -181,22 +174,19 @@ class MobileHeader extends React.Component {
 
   showDialog() {
     this.setState({
-     dialog: true
+     dialog: true,
+     navigation: false
     });
   }
 
   showNavigation() {
     this.setState({
+    dialog: false,
      navigation: true
     });
   }
 
-  hideDialog() {
-    this.setState({
-      dialog: false,
-      navigation: false
-    });
-  }
+
 
   render() {
       return (
