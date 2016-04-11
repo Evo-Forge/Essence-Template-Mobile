@@ -1,7 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
-
 import { AppBar, Block, Btn, Dialog, DialogHeader, DialogContent, DialogFooter, Divider, Icon, Image, Navigation, Text, Utils, Menu, List, ListItem,Switch } from 'react-essence';
+import { Link } from 'react-router';
 
 
 class MobileDialog extends React.Component {
@@ -198,7 +198,10 @@ class MobileHeader extends React.Component {
 
              <List type={'inline'} className={'e-right'}>
                <ListItem>
-                 <Icon name={"action-shopping-cart"}  />
+                 <Link to={'content/cart'}>
+                   <Icon name={"action-shopping-cart"}  />
+                 </Link>
+
                </ListItem>
                <ListItem>
                   <Btn icon={"content-filter-list"} className={"e-text-teal-A700 btn-bkg-color"} onClick={this.showDialog.bind(this)} />

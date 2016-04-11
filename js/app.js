@@ -18,35 +18,22 @@ import MobileCheckout from './components/checkout';
 import MobileHistory from './components/history';
 import MobilePayment from './components/payment';
 import MobileFooter from './components/footer';
+import MobileContainer from './components/container';
 import MobileSignup from './components/signup';
 
-
-class Mobile extends React.Component {
-	render() {
-        return(
-        	<Block>
-        		<MobileHeader />
-            <MobileSignup />
-						<MobileHistory />
-						<MobilePayment />
-						<MobileMenu />
-						<MobileDetails />
-						<MobileCart />
-        	</Block>
-        );
-    }
-}
 
 ReactDOM.render(
  <Router history={browserHistory}>
     <Route path="/" component={MobileSignup} />
-    <Route path="cart" component={MobileCart} />
-    <Route path="menu" component={MobileMenu} />
-    <Route path="details" component={MobileDetails} />
-    <Route path="confirmation" component={MobileConfirmation} />
-    <Route path="checkout" component={MobileCheckout} />
-    <Route path="history" component={MobileHistory} />
-    <Route path="payment" component={MobilePayment} />
+    <Route path="content" component={MobileContainer} >
+      <Route path="cart" component={MobileCart} />
+      <Route path="menu" component={MobileMenu} />
+      <Route path="details/:productId" component={MobileDetails} />
+      <Route path="confirmation" component={MobileConfirmation} />
+      <Route path="checkout" component={MobileCheckout} />
+      <Route path="history" component={MobileHistory} />
+      <Route path="payment" component={MobilePayment} />
+    </Route>
   </Router>,
  document.querySelector('.app')
 );

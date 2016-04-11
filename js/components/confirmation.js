@@ -1,6 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
-
+import { Link } from 'react-router';
 import { Block, Btn, Icon, Image, Text, Utils} from 'react-essence';
 import Input from 'essence-input';
 
@@ -104,8 +104,9 @@ class MobileConfirmation extends React.Component {
               </Block>
 
             </Block>
-
-            <Btn label={'Place Order'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding no-min-size order-btn'} />
+            <Link to={'content/checkout'}>
+              <Btn label={'Place Order'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding no-min-size order-btn'} />
+            </Link>
 
           </Block>
         );

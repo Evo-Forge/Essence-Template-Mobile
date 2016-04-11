@@ -2,6 +2,7 @@ import React from 'react';
 import ClassNames from 'classnames';
 
 import { Block, Btn, Icon, Image, Text, Utils} from 'react-essence';
+import { Link } from 'react-router';
 
 var cartData = [
   {id: 1, name: "Grilled Turkey Fillet", price: 9.50, pieceNumber: 2},
@@ -55,7 +56,7 @@ class MobileCartItem extends React.Component {
             </Text>
             <Text type={'p'} classes={'e-text-left e-text-grey-500 price'}>
               <Icon name={"editor-attach-money"} className={'no-min-size'} />
-              <Text>{this.props.price}</Text>
+              <Text>{this.props.price.toFixed(2)}</Text>
             </Text>
           </Block>
 
@@ -124,11 +125,12 @@ class MobileCart extends React.Component {
               <Text type={'p'} classes={'e-button e-text-grey-500'}>subtotal</Text>
               <Text type={'p'} classes={' e-text-uppercase e-display-1'}>
                 <Icon name={"editor-attach-money"} className={'no-min-size'} />
-                {this.state.subtotal}
+                {this.state.subtotal.toFixed(2)}
               </Text>
             </Block>
-
-            <Btn label={'Place Order'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding no-min-size order-btn'} />
+            <Link to={'content/confirmation'}>
+              <Btn label={'Place Order'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding no-min-size order-btn'} />
+            </Link>
 
           </Block>
         );
