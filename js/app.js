@@ -26,9 +26,9 @@ ReactDOM.render(
  <Router history={browserHistory}>
     <Route path="/" component={MobileSignup} />
     <Route path="content" component={MobileContainer} >
-      <Route path="cart" component={MobileCart} />
+      <Route path="details/:itemId" component={MobileDetails} />
       <Route path="menu" component={MobileMenu} />
-      <Route path="details/:productId" component={MobileDetails} />
+      <Route path="cart" component={MobileCart} />
       <Route path="confirmation" component={MobileConfirmation} />
       <Route path="checkout" component={MobileCheckout} />
       <Route path="history" component={MobileHistory} />

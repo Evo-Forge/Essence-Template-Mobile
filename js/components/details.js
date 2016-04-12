@@ -200,9 +200,9 @@ var tabs = {
 
 class MobileDetails extends React.Component {
     render() {
+      console.log(this.props.params);
         return (
         	<Block classes={'mobile-details'}>
-            Produsul: {this.props.productId}
             <Tab
               data={tabs}
               classes={'e-text-black'}
