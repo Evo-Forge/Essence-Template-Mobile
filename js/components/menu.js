@@ -62,7 +62,7 @@ class MobileMenu extends React.Component {
 
     render() {
         return (
-          <Block>
+          <Block className={'mobile-menu'}>
         	   <MobileMenuItemList data={response} />
           </Block>
         );

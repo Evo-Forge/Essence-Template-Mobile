@@ -198,8 +198,8 @@ class MobileHeader extends React.Component {
 
              <List type={'inline'} className={'e-right'}>
                <ListItem>
-                 <Link to={'content/cart'}>
-                   <Icon name={"action-shopping-cart"}  />
+                 <Link to={'/content/cart'}>
+                   <Btn icon={"action-shopping-cart"} className={"e-text-teal-A700 btn-bkg-color"} />
                  </Link>
 
                </ListItem>

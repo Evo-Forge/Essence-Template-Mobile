@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 .full {
   width: 100%!important;
   height: auto;
@@ -346,8 +352,7 @@ nav ul li {
 }
 .absolute-text {
   padding-top: 2%;
-  padiing-left: 20px;
-  width: 90%!important;
+  padding-left: 10px;
 }
 .header-signup {
   background-color: red;
@@ -366,7 +371,7 @@ nav ul li {
 }
 .div-height {
   height: 460px;
-  padding: 0 30px !important;
+  padding: 0 20px !important;
   margin-bottom: 50px!important;
 }
 .align-center {
@@ -382,6 +387,9 @@ nav ul {
 }
 nav ul li {
   width: 50%;
+}
+.mobile-menu {
+  padding: 0 10px;
 }
 .mobile-menu ul {
   width: 100%;

@@ -1,5 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router';
 
 import { Block, Btn, Icon, Image, Text, Utils} from 'react-essence';
 import Input from 'essence-input';
@@ -21,7 +22,7 @@ class MobileHistory extends React.Component {
             <Block className={'cart-item e-background-white'}>
               <Block className={'left-col'}>
                 <Block className={'img-container'}>
-                  <Image src={'assets/img/food-square.jpg'} className={'e-img-rsp'}/>
+                  <Image src={'../assets/img/food-square.jpg'} className={'e-img-rsp'}/>
                 </Block>
               </Block>
               <Block className={'right-col history-view'}>
@@ -41,7 +42,7 @@ class MobileHistory extends React.Component {
             <Block className={'cart-item e-background-white'}>
               <Block className={'left-col'}>
                 <Block className={'img-container'}>
-                  <Image src={'assets/img/food-square.jpg'} className={'e-img-rsp'}/>
+                  <Image src={'../assets/img/food-square.jpg'} className={'e-img-rsp'}/>
                 </Block>
               </Block>
               <Block className={'right-col history-view'}>
@@ -54,10 +55,12 @@ class MobileHistory extends React.Component {
                     9.50
                   </Text>
                 </Block>
-                <Btn label={'Reorder'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding'} />
+                <Link to={'/content/cart'}>
+                    <Btn label={'Reorder'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding'} />
+                </Link>
               </Block>
             </Block>
-            
+
           </Block>
         );
     }

@@ -42,7 +42,7 @@ class MobileCartItem extends React.Component {
 
   render() {
     return (
-      <Block className={'cart-item'}>
+      <Block className={'cart-item edit-view'}>
         <Block className={'left-col'}>
           <Block className={'img-container'}>
             <Image src={'assets/img/food-square.jpg'} className={'e-img-rsp'}/>
@@ -128,7 +128,7 @@ class MobileCart extends React.Component {
                 {this.state.subtotal.toFixed(2)}
               </Text>
             </Block>
-            <Link to={'content/confirmation'}>
+            <Link to={'/content/confirmation'}>
               <Btn label={'Place Order'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding no-min-size order-btn'} />
             </Link>
 

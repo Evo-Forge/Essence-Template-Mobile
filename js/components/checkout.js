@@ -37,21 +37,21 @@ class MobileCheckout extends React.Component {
             </Block>
 
             <Block className={'cart-item e-margin-top-15'}>
-              <Text type={'h2'} className={"e-button e-text-teal-A700 e-no-margin line-height-15"}>card details</Text>
+              <Text type={'h2'} className={"e-button e-text-teal-A700 e-no-margin line-height-15"}>delivery address</Text>
             </Block>
 
             <Block className={'cart-item e-background-white'}>
-              <Text type={'p'} className={"e-body1 e-text-capitalize e-no-margin e-text-grey-500 line-height-15"}>first name</Text>
-              <Text type={'p'} className={"e-body1 e-text-capitalize e-no-margin e-text-grey-500 line-height-15"}>last name</Text>
+              <Text type={'p'} className={"e-body1 e-text-capitalize e-no-margin e-text-grey-500 line-height-15"}>Address</Text>
             </Block>
             <Block className={'cart-item e-background-white'}>
-              <Text type={'p'} className={"e-body1 e-text-capitalize e-no-margin e-text-grey-500 line-height-15"}>card number</Text>
+              <Text type={'p'} className={"e-body1 e-text-capitalize e-no-margin e-text-grey-500 line-height-15"}>City</Text>
+              <Text type={'p'} className={"e-body1 e-text-capitalize e-no-margin e-text-grey-500 line-height-15"}>State</Text>
             </Block>
             <Block className={'cart-item e-background-white'}>
-              <Text type={'p'} className={"e-body1 e-text-uppercase e-no-margin e-text-grey-500 line-height-15"}>ccv</Text>
-              <Text type={'p'} className={"e-body1 e-text-capitalize e-no-margin e-text-grey-500 line-height-15"}>exp. date</Text>
+              <Text type={'p'} className={"e-body1 e-text-uppercase e-no-margin e-text-grey-500 line-height-15"}>Postal Code</Text>
+              <Text type={'p'} className={"e-body1 e-text-capitalize e-no-margin e-text-grey-500 line-height-15"}>Country</Text>
             </Block>
-            <Link to={'content/payment'}>
+            <Link to={'/content/payment'}>
               <Btn label={'Payment'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding no-min-size order-btn'} />
             </Link>
 

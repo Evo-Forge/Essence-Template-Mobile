@@ -1,5 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router';
 
 import { Btn, AppBar, Block, Text, Utils, Menu, List, ListItem, Tab, Image, Icon, Divider} from 'react-essence';
 
@@ -102,7 +103,9 @@ var tabs = {
           </Text>
         </Block>
        </Block>
-       <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-teal-A700'} />
+       <Link to={'/content/menu'}>
+         <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-teal-A700'} />
+       </Link>
    </Block>),
    (<Block classes={'e-background-grey-100'}>
       <Block classes={'review-main'}>
@@ -200,7 +203,6 @@ var tabs = {
 
 class MobileDetails extends React.Component {
     render() {
-      console.log(this.props.params);
         return (
         	<Block classes={'mobile-details'}>
             <Tab

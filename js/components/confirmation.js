@@ -29,7 +29,7 @@ class MobileConfirmation extends React.Component {
             <Block className={'cart-item e-background-white'}>
               <Block className={'left-col'}>
                 <Block className={'img-container'}>
-                  <Image src={'assets/img/food-square.jpg'} className={'e-img-rsp'}/>
+                  <Image src={'../assets/img/food-square.jpg'} className={'e-img-rsp'}/>
                 </Block>
                 <Btn icon={'action-delete'} ripple={true} type={'button'} className={'flat e-text-white e-background-red-300 del-item'} />
               </Block>
@@ -49,7 +49,7 @@ class MobileConfirmation extends React.Component {
             <Block className={'cart-item e-background-white'}>
               <Block className={'left-col'}>
                 <Block className={'img-container'}>
-                  <Image src={'assets/img/food-square.jpg'} className={'e-img-rsp'}/>
+                  <Image src={'../assets/img/food-square.jpg'} className={'e-img-rsp'}/>
                 </Block>
                 <Btn icon={'action-delete'} ripple={true} type={'button'} className={'flat e-text-white e-background-red-300 del-item'} />
               </Block>
@@ -88,7 +88,7 @@ class MobileConfirmation extends React.Component {
 
             <Block className={'cart-item e-background-white e-v-end e-margin-bottom-15'}>
               <Block>
-                <Image src={'assets/img/visa.png'} className={'e-img-rsp'} width={'50px'} />
+                <Image src={'../assets/img/visa.png'} className={'e-img-rsp'} width={'50px'} />
                 <Text type={'p'} classes={'e-text-left e-body1 e-no-margin e-text-uppercase e-text-grey-400'}>card number</Text>
                 <Text type={'p'} classes={'e-text-left e-body1 e-no-margin'}>1234 5678 9123 4567</Text>
               </Block>
@@ -104,7 +104,7 @@ class MobileConfirmation extends React.Component {
               </Block>
 
             </Block>
-            <Link to={'content/checkout'}>
+            <Link to={'/content/checkout'}>
               <Btn label={'Place Order'} ripple={true} type={'button'} className={'flat e-background-teal-A700 e-text-white e-no-margin e-no-padding no-min-size order-btn'} />
             </Link>
 
